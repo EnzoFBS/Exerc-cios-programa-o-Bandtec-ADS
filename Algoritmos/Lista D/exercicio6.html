@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício6</title>
+</head>
+<body>
+ 
+            <select id="estacoes_ano" onchange="muda_img()">
+           
+           <option value="https://img.elo7.com.br/product/original/355F20E/fundo-fotografico-em-tecido-verao-2-20x1-50m-fundos-digitais.jpg">Verão</option> 
+           <option value="https://m.psecn.photoshelter.com/img-get/I0000r6tpE968xeU/s/900/900/F09907.jpg" >Inverno</option>
+           <option value="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK7P-jjTru6JwHs46flujgeJGo59T1abT5h1F9DUnmvpl1LNNt48_b4hHcjUKzMwwtgSo&usqp=CAU" >Outono</option>
+           <option value="https://m.extra.globo.com/noticias/viagem-e-turismo/23105053-85d-2c7/w488h275-PROP/inhotim.jpg" >Primavera</option>
+            </select><br><br><br><br><br>
+  
+
+            <img id="div_msg" src="">
+
+
+</body>
+</html>
+
+<script>
+
+function muda_img(){
+
+  div_msg.src = `${estacoes_ano.value}`
+  div_msg.style.width = `  200px   `  
+
+
+
+
+
+
+}
+
+
+
+
+</script>

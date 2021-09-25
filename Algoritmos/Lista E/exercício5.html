@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício5</title>
+</head>
+<body>
+
+    <h1>Energia Paulopolis</h1><br>
+
+    Insira a quantidade de kWh consumido no mês:<input id="ipt_khw" type="text" placeholder="Insira kWh mês">
+    <button onclick="calcular()">calcular conta de Luz</button>
+
+
+    
+</body>
+</html>
+
+
+<script>
+
+function calcular(){
+
+var contaLuz = Number(ipt_khw.value)
+
+if (contaLuz< 100) {
+
+    alert(`  Sua conta de luz será de  R$${contaLuz-(contaLuz * 0.10)} `)
+    
+}
+
+alert(`  Sua conta de luz será de  R$${contaLuz} `)
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+</script>

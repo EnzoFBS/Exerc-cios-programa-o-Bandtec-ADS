@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício13</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;"> Brasil x Alemanha</h1>
+    
+    <button onclick="gol_brasil()" > Gol do Brasil </button>
+    <button onclick="gol_alemanha()" > Gol da Alemanha </button>
+    <button onclick="restart()" > Recomeçar </button> <br><br>
+    <h2><b>Tempo real do jogo </b></h2>
+    <h3><b>PLACAR</b></h3>
+    <div id="div_golbrasil" style="float: left;" ></div>    <div id="div_golalemanha" style="float: left;" ></div>
+
+
+    
+    
+    
+</body>
+</html>
+
+
+<script>
+
+function gol_brasil(){
+
+    div_golbrasil.innerHTML += " <span style ='color:green;'> GOL DO BRASILLLLL </span>  <b> X <b> <br> "
+
+
+}
+
+function gol_alemanha(){
+
+    div_golalemanha.innerHTML += " <span style='background-color: red; color: yellow ;'> GOL DA ALEMANHAA <br> </span> "
+
+}
+
+function restart(){
+
+div_golbrasil.innerHTML =''
+div_golalemanha.innerHTML =''
+
+}
+
+
+</script>

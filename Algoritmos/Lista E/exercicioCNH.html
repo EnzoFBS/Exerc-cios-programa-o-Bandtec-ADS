@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT  ">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício CNH </title>
+</head>
+<body>
+
+    <input id="ipt_pontos"> 
+    <button onclick="chamar()">balalala</button><br><br>
+
+
+    <div id="div_msg"></div>
+
+    
+</body>
+</html>
+
+
+
+<script>
+
+
+ 
+    var pontos = Number(ipt_pontos.value)
+    var valorMulta =Number(78)
+    var resultado = valorMulta * pontos;   
+
+    function chamar(){
+    if(ipt_pontos.value>=20){
+
+    alert('parado voce esta preso')
+
+    }
+
+   
+    var pontos = Number(ipt_pontos.value)
+    var valorMulta =Number(78)
+    var resultado = valorMulta * pontos;   
+      
+    div_msg.innerHTML =  ` O valor total das multas é de R$ ${resultado.toFixed(2)}            `      
+
+    }
+
+
+</script>

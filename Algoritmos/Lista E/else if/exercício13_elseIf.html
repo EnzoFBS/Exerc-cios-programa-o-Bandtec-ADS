@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício13</title>
+</head>
+<body>
+
+    <h1>Valor guardado:<span id="valor">0.00</span></h1><br>
+    <button onclick="guarda()" > guardar 5.00</button> <button onclick="gasta()" >Gasta 10.00</button><BR><BR>
+
+    <div id="msg" ></div>
+    
+</body>
+</html>
+
+<script>
+
+    var valorCofre = 0.00
+
+function guarda(){
+
+    valorCofre += 5.00
+
+    valor.innerHTML = `  ${valorCofre.toFixed(2)}  `
+
+    if (valorCofre >= 0.00) {
+
+        msg.innerHTML = `<span style ="color: blue;" > Finanças Ok! </span>  ` 
+        
+    }
+
+     if (valorCofre > 100.00) {
+
+        msg.innerHTML = ` #Ostentação  `
+        
+    }
+
+     if (valorCofre < 0.00 ) {
+
+        msg.innerHTML = `<span style ="color: red;" > Finanças em perigo! </span>  ` 
+        
+    }
+
+     if (valorCofre < -20.00) {
+
+        msg.innerHTML = ` Quase um corinthians `
+        
+    }
+
+
+}
+
+function gasta(){
+
+  valorCofre -= 10.00
+
+  valor.innerHTML = `  ${valorCofre.toFixed(2)} `
+
+
+  if (valorCofre >= 0.00) {
+
+msg.innerHTML = `<span style ="color: blue;" > Finanças Ok! </span>  ` 
+
+}
+
+ if (valorCofre > 100.00) {
+
+msg.innerHTML = ` #Ostentação `
+
+}
+
+ if (valorCofre < 0.00 ) {
+
+msg.innerHTML = `<span style ="color: red;" > Finanças em perigo! </span>  ` 
+
+}
+
+ if (valorCofre < -20.00) {
+
+msg.innerHTML = ` Quase um corinthians `
+
+}
+
+
+
+}
+
+
+
+
+
+</script>
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio11</title>
+</head>
+<body>
+    <h1>Seu Cofrinho apenas com Reais </h1><br>
+
+    <select id="sel_cofrinho" >
+        <option id="doisReal" value="" >R$2.00 </option>
+        <option id="cincoReal" value="" >R$5.00 </option>
+        <option id="dezReal" value="" >R$10.00 </option>
+        <option id="vinteReal" value="" >R$20.00 </option>
+        <option id="cinquentaReal" value="" >R$50.00 </option>
+        <option id="cemReal" value="" >R$100.00 </option>
+
+    </select><br><br>
+
+<div>O saldo do cofrinho é <span id="span_cofrinho" >0:00</span></div>
+<div>A quantidade de operações foi <span id="soma_operacoes" >0</span></div>
+<div>A média de depósito são <span>0</span> </div>
+
+<button onclick="depositar()" >Depositar</button>
+<button onclick="tirarGrana()">Tirar grana</button>
+
+
+<span id="teste">Teste = </span>    
+
+</body>
+</html>
+
+
+<script>
+
+    movimentacoes ={
+
+cofreatt : 0,        
+depositos: 0,
+retiradas: 0,
+media_depositos: 0
+
+
+    }
+
+function depositar(){
+
+    real ={
+
+   doisReais : Number(doisReal.value),
+   cincoReais : Number(cincoReal.value),
+   dezReais : Number(dezReal.value),
+   vinteReais : Number(vinteReal.value),
+   cinquentaReais : Number(cinquentaReal.value),
+   cemReais : Number(cemReal.value)
+
+
+    }
+
+movimentacoes.depositos++
+var depositar = real.doisReais + movimentacoes.cofreatt
+var saldo = depositar
+span_cofrinho.innerHTML = `  ${saldo}      `
+teste.innerHTML = ` ${saldo}       ` 
+
+soma_operacoes.innerHTML = `      ${movimentacoes.despositos}     `
+
+
+
+
+}
+
+function tirarGrana(){
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

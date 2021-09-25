@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio19</title>
+</head>
+<body>
+    
+
+    <span id="span_img"><img style="width: 170px;" id="imgbase" src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Goku-Dragon-Ball-PNG.png"> </span><br><br>
+
+     <button onclick="SSJ()">Transformar em SSJ</button><br>
+     <button onclick="SSJ2()">Transformar em SSJ2</button><br>
+     <button onclick="SSJ3()">Transformar em SSJ3</button><br>
+     <button onclick="BASE()">Voltar a forma base</button> <br><br>  
+     
+     <h2></h2><span id="kibase" >ki base do Guerreiro Sayajin: 2000 </span> </h2> 
+     <div id="corabaixoSSJ" > </div>
+     <div id="corabaixoSSJ2" > </div>
+     <div id="corabaixoSSJ3" > </div>
+     <div id="corabaixoSSJB" > </div>
+</body>
+</html>
+
+<script>
+
+function SSJ(){
+    
+    span_img.innerHTML = '<img style="width: 170px;" src="https://i.pinimg.com/originals/da/8e/b3/da8eb3b97bcd7f2458773a32472e4fcd.png">'
+    kibase.innerHTML = '<span style="color: blue;" >ki na forma SSJ: 100000</span> '
+  
+  
+    
+}
+function SSJ2(){
+    
+    span_img.innerHTML = '<img style="width: 170px;" src="https://www.nicepng.com/png/full/29-294970_goku-super-saiyan-2-by-bardocksonic-d73adde-dragon.png">'
+    kibase.innerHTML = '<span style="color: yellow;background-color: blue;" >ki na forma SSJ: 200000</span>'
+ 
+
+    
+}
+function SSJ3(){
+    
+    span_img.innerHTML = '<img style="width: 170px;" src="https://i.pinimg.com/originals/c4/e7/a2/c4e7a2cf9fa2ccc9afdf7c1beb3b5b3d.png">'
+    kibase.innerHTML = '<span style="color: orange;background-color: yellow;" >ki na forma SSJ3: 400000</span>'
+
+}
+function BASE(){
+    
+    span_img.innerHTML = '<img style="width: 170px;" src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Goku-Dragon-Ball-PNG.png">'
+    kibase.innerHTML = 'ki base do Guerreiro Sayajin: 2000'
+
+
+}
+
+
+
+
+</script>

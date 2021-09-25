@@ -1,0 +1,48 @@
+
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício7</title>
+</head>
+<body>
+<h2>Frequência</h2> 
+
+<input id="ipt_nome" type="text" placeholder="nome do aluno">
+<input id="ipt_aulastot" type="text" placeholder="quantidade de aulas">
+<input id="ipt_faltas" type="text" placeholder="quantidade de faltas">
+<button style="height: 75px;" onclick="calcularfreq()">Calcular frequencia</button><br><br>
+
+<div id="div_msg"></div><br>
+<!-- ID DIV ALTURA , BACKGROUND VERMELHO , WIDTH 0, DEPOIS NO SCRIPT ALTERA O STYLE.WIDHT    --> 
+<div id="tamanho" style="background-color: red;width: 0%; " >.</div>
+
+
+</body>
+</html>
+
+
+
+<script>
+
+
+function calcularfreq(){
+
+  var resultado =  (1- ipt_faltas.value /ipt_aulastot.value) *100
+
+div_msg.innerHTML += `Olá ${ipt_nome.value}! Sua frequência foi de ${resultado}`
+div_msg.innerHTML += '<span style="color: green;"><b>%</b> </span>'                 
+div_msg.style.color ='blue';
+tamanho.style.width = `${resultado}%`
+
+
+}
+
+
+
+
+
+
+
+</script>

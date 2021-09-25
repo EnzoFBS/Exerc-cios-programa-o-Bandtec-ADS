@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Insira o valor da renda familiar <input id="ipt_rendaFamiliar" type="text" placeholder="insira renda familiar " ><br>
+    Insira o valor da prestação <input type="text" id="ipt_valorprestação" placeholder="insira valor prestação" ><br><br>
+    <button onclick="calcula()" >verificar financiamento</button>
+
+
+    <div id="div_msg" ></div><br>
+    <div id="div_msg2" ></div>
+
+<b ></b>
+
+</body>
+</html>
+
+<script>
+
+function calcula(){
+
+ var renda = Number(ipt_rendaFamiliar.value)
+ var prestacao = Number(ipt_valorprestação.value)
+ var resultado = (prestacao/renda)*100
+
+
+ div_msg.innerHTML = ` a prestação corresponde a ${resultado}% da renda familiar  `
+ 
+ if (resultado>30)  {
+
+    div_msg2.innerHTML = ` <b  style="color: red;" >a prestação corresponde a ${resultado}% da renda familiar</b>  `
+     
+ }
+
+
+
+}
+
+
+
+
+
+</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio3</title>
+</head>
+<body>
+   
+  Insira sua nota 1  <input id="nota1" placeholder="insira sua primeira nota" ><br>
+  Insira sua nota 2  <input id="nota2" placeholder="insira sua segunda nota"><br>
+  Insira sua nota 3  <input id="nota3" placeholder="insira sua terceira nota" ><br><br>
+  <button onclick="fazerMedia()" >Analisar desempenho</button><br><br><br>
+
+
+<div id="div_msg" ></div><br><br>
+
+
+<div id="acima_media" ></div>
+    
+
+    
+</body>
+</html>
+
+<script>
+
+function fazerMedia(){
+
+    notas={
+
+        nota_1: Number(nota1.value),
+        nota_2: Number(nota2.value),
+        nota_3: Number(nota3.value)
+
+    }
+
+var media = (notas.nota_1 + notas.nota_2 + notas.nota_3)/3
+
+
+div_msg.innerHTML = `    ${media}     `
+
+
+if(media>= 9.4 ){
+
+
+acima_media.innerHTML = `    Parabéns, você é fora de série!    ` 
+
+
+
+}
+
+
+}
+
+
+
+
+</script>

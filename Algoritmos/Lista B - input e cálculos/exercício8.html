@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário trabalhador</title>
+</head>
+<body>
+    
+    <input id="ipt_salarioT" type="text" placeholder="Insira o salário do trabalhador">
+    <button id="calcula_desc" onclick="calculardesc()">Calcular descontos </button><br><br>
+
+  <h2>Seus descontos serão de</h2><br>
+  <span id="span_inss" >INSS: R$</span><br>
+  <span id="span_ir" >IR: R$ </span><br>
+  <span id="span_totaldesc" >Total de descontos: R$ </span><br>
+  <span id="span_salarioTot" >Seu salário após os descontos será de: R$ </span>
+
+    
+    
+</body>
+</html>
+
+<script>
+
+
+function calculardesc(){
+
+var inss = (ipt_salarioT.value*0.1); 
+var ir = (ipt_salarioT.value*0.2);
+var totaldesc = Number(inss ) + Number(ir);
+var salario_final = (ipt_salarioT.value - totaldesc);
+
+span_inss.innerHTML =  ` INSS: R$${inss}  `
+span_ir.innerHTML =   ` IR: R$${ir}  `
+span_totaldesc.innerHTML = ` Total de descontos: R$${totaldesc}  `
+span_salarioTot.innerHTML = ` Seu salário após os descontos será de: R$${salario_final}  `
+
+
+
+
+
+
+
+}
+
+
+
+
+</script>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="pare()" style="width: 200px;background-color: red; " >Pare</button>
+    <button onclick="pense()" style="width: 200px;background-color: yellow;" >Pense</button>
+    <button onclick="siga()" style="width: 200px;background-color: green;" >Siga</button><br>
+
+       <span id="span_pare" style="width: 20%;" ></span> 
+
+</body>
+</html>
+
+
+<script>
+
+function pare(){
+
+    span_pare.innerHTML = "<h2 style= ' background-color: red; color: white;width: 16%;'>  Pare e aguarde  <h2>";
+
+    }
+
+    function pense(){
+
+span_pare.innerHTML = "<h2 style= ' background-color: black; color: yellow; width: 40%;'> Pense se pode seguir ou se deve parar<h2>";
+
+}
+
+function siga(){
+
+span_pare.innerHTML = "<h2 style= ' background-color: white; color: green; width:20%; '> Pode seguir adiante<h2>";
+
+}
+
+
+
+</script>

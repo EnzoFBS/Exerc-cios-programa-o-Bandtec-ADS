@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício2</title>
+</head>
+<body>
+
+    <h1>Refrigerantes</h1>
+
+    Insira quantos refrigerantes você consome por dia<input id="ipt_refrigerantes" type="text" placeholder="insira a quantidade de latinhas"><br><br>
+    <button onclick="calc_refri()" >Quantos Refris?</button><br><br>
+    
+
+<div id="div_msg" ></div>
+
+<div id="diabetes"></div>
+
+
+</body>
+</html>
+
+<script>
+
+  function calc_refri(){
+
+    var latinhas = Number(ipt_refrigerantes.value)
+    var ano = Number(365)
+    var refriAno = latinhas * ano
+
+
+    div_msg.innerHTML = `A quantidade de refrigerantes que você consome ao ano são ${refriAno} latinhas<br><br>     `
+
+    if(refriAno > 500 ){
+
+        diabetes.innerHTML = `  Ae ta ficando com diabetes          `  
+ 
+
+
+
+
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+</script>

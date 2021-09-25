@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio4</title>
+</head>
+<body>
+
+    <h1>Fim de semana da PIZZA</h1>
+
+
+    insira o valor da pizza :<input id="ipt_valorPizza" type="text" placeholder="insira o valor da pizza" ><br><br>
+    insira a quantidade de amigos :<input id="ipt_amigos" type="text" placeholder="insira a quantidade amigos" ><br><br>
+    <button onclick="calc()"> Rola a Pizza?  </button><br><br>
+
+    <div id="div_msg"></div>
+
+    <div id="deuRuim" ></div>
+
+</body>
+</html>
+
+
+<script>
+
+  function calc(){
+
+  var valorPizza = Number(ipt_valorPizza.value)
+  var amigos = Number(ipt_amigos.value)
+  var media = valorPizza/amigos
+
+div_msg.innerHTML = `   Cada amigo vai pagar R$${media.toFixed(2)} pela pizza   ` 
+
+if (media > 20) {
+
+deuRuim.innerHTML = `   Deu ruim! Pizza muito cara!      `
+  
+}
+
+
+
+  }
+
+
+
+</script>

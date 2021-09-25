@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício12</title>
+</head>
+<body>
+
+    <h1> Você já clicou <span id="span_numero" >0</span> vezes </h1><br><br>
+
+    <button onclick="bt_click()" >Clicar neu </button><br><br>
+
+    <div id="div_msg" ></div>
+
+    
+</body>
+</html>
+
+<script>
+
+    var bt_Clicado = 0
+
+function bt_click() {
+
+   bt_Clicado ++;
+
+   span_numero.innerHTML = ` ${bt_Clicado}         `
+    
+
+
+if (bt_Clicado <= 5 ) {
+
+    div_msg.innerHTML = `Dedo fraquinho, hein ` 
+    
+}
+else if (bt_Clicado <= 10 ) {
+
+    div_msg.innerHTML = `Dedo bom, mano enquanto` 
+    
+}
+else if (bt_Clicado < 15) {
+
+    div_msg.innerHTML = `Gosta de clicar, hein! ` 
+    
+}
+
+else if (bt_Clicado >= 15){
+
+    div_msg.innerHTML = `Eita dedo nervoso! ` 
+}
+
+}
+</script>
+
+
+
+

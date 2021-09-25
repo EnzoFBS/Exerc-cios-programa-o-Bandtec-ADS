@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fria()"  >Pessoa fria </button>
+    <button onclick="neutra()" >Pessoa neutra </button>
+    <button onclick="nervosa()" >Pessoa nervosa</button>
+         
+    <h2 id="h_cores"> Bom dia, colegas</h2> 
+
+
+</body>
+</html>
+
+
+<script>
+
+function fria(){
+
+    h_cores.innerHTML = '<span style="color: darkblue;">Bom dia, colegas </span>'
+    
+}
+
+function neutra(){
+
+h_cores.innerHTML = '<span style="color: grey;">Bom dia, colegas </span>'
+
+}
+
+function nervosa(){
+
+h_cores.innerHTML = '<span style="color: red    ;">Bom dia, colegas </span>'
+
+}
+
+</script>
+
+
+<span style="color: darkblue;"></span>
