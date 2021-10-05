@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício11</title>
+</head>
+<body>
+
+    <h1>Sistema de Avaliação</h1>
+
+    <button onclick="avalia()">Avaliar</button>
+
+    <div id="notaRecebida"></div><br><br>
+
+    <div id="img"></div>
+
+
+
+</body>
+</html>
+
+<script>
+
+
+function avalia() {
+
+    var aval = ((Math.random()*5).toFixed(1))
+
+    notaRecebida.innerHTML = ` Sua avaliação é ${aval} `
+
+    if (aval>= 0 && aval < 0.5) {
+
+        img.innerHTML = ` <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Sad_Face_Emoji_Icon_60x60.png"> `
+        
+    }
+        else if (aval >= 0.5 && aval < 1.5) {
+
+            img.innerHTML = ` <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Confused_Face_Emoji_60x60.png"> `
+        
+        }
+            else if (aval >= 1.5 && aval < 3.5) {
+                
+                img.innerHTML = ` <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Unamused_Face_Emoji_Icon_60x60.png"> `
+            
+            }
+                else if (aval >= 3.5 && aval < 4.5) {
+                    
+                    img.innerHTML = ` <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Slightly_Smiling_Face_Emoji_Icon_60x60.png"> `
+                
+                }
+                    else {
+                        
+                        img.innerHTML = ` <img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Smiling_Emoji_with_Eyes_Opened_Icon_60x60.png"> `
+                    
+                    }
+
+
+    
+}
+
+
+
+
+
+
+</script>

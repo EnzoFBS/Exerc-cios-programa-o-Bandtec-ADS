@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandtec</title>
+</head>
+<body>
+
+    <h1>Nota aluno e frequência critério Bandtec</h1>
+
+   
+   <h2 id="frequencia"></h2>
+    
+
+
+    <button onclick="geranota()" >Nota aluno</button><br>
+    <span id="notas" ></span><br>
+    <button onclick="gerafrequencia()" >Frequencia</button><br>
+    <span id="frequencias"></span><br>
+    <button onclick="aprova()" >Aprovado?</button>
+    <span id="msg"></span>    
+
+
+</body>
+</html>
+
+<script>
+
+
+var frequencia;
+var nota ;
+
+function geranota() {
+
+  
+    console.log(nota);
+
+    nota = ((Math.random()*7+3).toFixed(1));
+    frequencia = ((Math.random()*50+50).toFixed(1));
+
+    notas.innerHTML = ` Sua nota é ${nota}  `       
+    
+}
+
+function gerafrequencia() {
+
+    
+    nota = ((Math.random()*7+3).toFixed(1));
+    frequencia = ((Math.random()*50+50).toFixed(1));
+
+
+   frequencias.innerHTML = `Sua frequencia é de ${frequencia}% `
+
+  
+}
+
+function aprova() {
+
+    
+    nota = ((Math.random()*7+3).toFixed(1));
+    frequencia = ((Math.random()*50+50).toFixed(1));
+
+    
+if ( nota > 6 && frequencia >= 75 ) {
+      
+      msg.innerHTML = ` Esse aluno está aprovado    `
+      
+  }
+
+  else{
+
+      msg.innerHTML = `  Esse aluno está reprovado      ` 
+  }
+  
+
+}
+
+
+</script>

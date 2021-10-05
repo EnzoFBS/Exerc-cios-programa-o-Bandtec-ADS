@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+</head>
+<body>
+
+    <h1>Como será que o dia está?</h1>
+
+    <button onclick="sorteia()">Sorteia numero</button><br><br>
+    <div id="msg" > </div>
+
+
+    
+</body>
+</html>
+
+<script>
+
+function sorteia() {
+
+    var horadia = Number((Math.random()*23).toFixed())
+
+    if (horadia >= 0 && horadia <= 11   ) {
+        
+        msg.innerHTML +=  `  Bom dia, flor do dia, são ${horadia}<br> ` 
+    }
+    else if (horadia >= 12 && horadia <= 17 ) {
+        
+        msg.innerHTML +=  `  Bom tarde, já vai tarde, são ${horadia}<br> ` 
+
+    }
+    else if (horadia >= 18 && horadia <= 23 ) {
+        
+        msg.innerHTML +=  `  Bom noite, durma bem, são ${horadia}<br> ` 
+
+    }
+    
+    
+}
+
+
+
+
+
+
+</script>
